@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "650227699421",
+    "project_id": "rbandc-ccb00",
+    "storage_bucket": "rbandc-ccb00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650227699421:android:dd1eb061e5d4ed3df6d534",
+        "android_client_info": {
+          "package_name": "com.rajheshbuilders.rbc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650227699421-82oago2nmacm411fpbstmvs54pp9d0sk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rajheshbuilders.rbc",
+            "certificate_hash": "55277e7adefd88e7309c410997ee413086d7701d"
+          }
+        },
+        {
+          "client_id": "650227699421-1mhlha2grspis2ajlujub6qp8ro93eoe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvhWpAGIPWA-7Z_XaEm7iJbzi-2X2y1aU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650227699421-1mhlha2grspis2ajlujub6qp8ro93eoe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

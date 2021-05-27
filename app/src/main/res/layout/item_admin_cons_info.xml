@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="2dp">
+<androidx.cardview.widget.CardView
+    android:id="@+id/cons_info_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/cons_info_img_admin"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/index"/>
+        <TextView
+            android:id="@+id/cons_info_heading_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cons_info_img_admin"
+            android:text="heading"
+            android:textStyle="bold"
+
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif"/>
+        <ImageView
+            android:id="@+id/admin_popup_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cons_info_desc_admin"
+            android:text="this is my construction description"
+            android:fontFamily="sans-serif-light"
+            android:layout_toRightOf="@+id/cons_info_img_admin"
+            android:layout_below="@id/cons_info_heading_admin"
+            android:textSize="9sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/cons_info_location_and_area_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cons_info_heading_admin"
+            android:layout_marginTop="66dp"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:layout_marginEnd="5dp"
+
+
+            android:layout_toRightOf="@+id/cons_info_img_admin"
+
+
+            android:fontFamily="sans-serif"
+            android:text="status|location|area"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

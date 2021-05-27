@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ConstructionCustomerInfo">
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/teal_200"
+        android:id="@+id/construction_request_toolbar"
+
+
+        android:elevation="4dp"/>
+    <TextView
+        android:id="@+id/store_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter following details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"
+        android:layout_marginStart="5dp"/>
+
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to place a construction request"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:textColor="#000000"
+        android:layout_marginStart="5dp"/>
+    <EditText
+        android:id="@+id/name_construction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="name"
+        android:textColorHint="@color/teal_200"
+        android:inputType="textCapWords"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <EditText
+        android:id="@+id/phone_number_construction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Phone number"
+        android:textColorHint="@color/teal_200"
+
+
+        android:inputType="number"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <EditText
+        android:id="@+id/email_address_construction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Email Address"
+        android:textColorHint="@color/teal_200"
+
+
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <EditText
+        android:id="@+id/address_construction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Address"
+        android:textColorHint="@color/teal_200"
+
+
+        android:inputType="textPostalAddress"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+
+    <EditText
+        android:id="@+id/description_construction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="what do you want to construct"
+
+        android:textColorHint="@color/teal_200"
+
+
+        android:inputType="textPostalAddress"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/construction_submit_button"
+        android:text="Submit"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:background="@drawable/service_card_view_background5"/>
+
+</LinearLayout>

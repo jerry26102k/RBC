@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+   <TextView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:background="@color/teal_700"
+       android:text="Edit Panel"
+       android:textSize="30dp"
+       android:textColor="#FFFFFF"
+       android:padding="5dp"
+       android:gravity="center"/>
+    <EditText
+        android:id="@+id/edit_current_const_image_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Image Url"
+        android:textColor="@color/grey_font"
+        android:textColorHint="@color/teal_200"
+        android:inputType="textUri"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <EditText
+        android:id="@+id/edit_current_const_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Heading"
+        android:textColor="@color/grey_font"
+        android:textColorHint="@color/teal_200"
+        android:inputType="textCapWords"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <EditText
+        android:id="@+id/edit_current_const_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Description"
+        android:textColorHint="@color/teal_200"
+        android:textColor="@color/grey_font"
+
+
+
+        android:inputType="text"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <EditText
+        android:id="@+id/edit_current_const_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Location"
+        android:textColorHint="@color/teal_200"
+        android:textColor="@color/grey_font"
+
+
+
+        android:inputType="text"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <EditText
+        android:id="@+id/edit_current_const_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Area in square feet"
+        android:textColorHint="@color/teal_200"
+        android:textColor="@color/grey_font"
+
+
+
+        android:inputType="number"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <EditText
+        android:id="@+id/edit_current_const_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Status"
+        android:textColorHint="@color/teal_200"
+        android:textColor="@color/grey_font"
+
+
+
+        android:inputType="number"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_current_const_add_btn"
+        android:text="Update Information"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:background="@drawable/service_card_view_background5"/>
+
+</LinearLayout>

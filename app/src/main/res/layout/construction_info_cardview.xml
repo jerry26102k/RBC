@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    android:elevation="4dp"
+    app:cardUseCompatPadding="true"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:id="@+id/cons_info_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/index"/>
+        <TextView
+            android:id="@+id/cons_info_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/cons_info_img"
+            android:text="heading"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="sans-serif"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cons_info_desc"
+            android:text="this is my construction description"
+            android:fontFamily="sans-serif-light"
+            android:layout_toRightOf="@+id/cons_info_img"
+            android:layout_below="@id/cons_info_heading"
+            android:textSize="9sp"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/cons_info_location_and_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cons_info_heading"
+            android:layout_marginTop="66dp"
+            android:layout_alignParentRight="true"
+            android:gravity="end"
+            android:layout_marginEnd="5dp"
+
+
+            android:layout_toRightOf="@+id/cons_info_img"
+
+
+            android:fontFamily="sans-serif"
+            android:text="location|area"
+            android:textSize="10sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

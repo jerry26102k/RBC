@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminAddStoreItemData">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="@color/teal_200"
+        android:id="@+id/toolbar_add_store_item"/>
+    <ImageView
+        android:id="@+id/add_store_item_img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ic_camera"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:background="@drawable/image_boder"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:id="@+id/add_store_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Product Name"
+        android:textColor="@color/grey_font"
+        android:textColorHint="@color/teal_200"
+        android:inputType="textCapWords"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+    <EditText
+        android:id="@+id/add_store_item_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:hint="Product Description"
+        android:textColorHint="@color/teal_200"
+        android:textColor="@color/grey_font"
+
+
+
+        android:inputType="text"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/edit_text_design"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_store_item_btn"
+        android:text="Add Data To Database"
+        android:textSize="12sp"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:background="@drawable/service_card_view_background5"/>
+
+
+</LinearLayout>

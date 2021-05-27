@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminDashboard">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:elevation="4dp"
+        android:background="@color/teal_200"
+        android:id="@+id/adb_toolbar_1"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What you want to do"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+
+        android:layout_marginTop="15dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:padding="20dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ongoing_construction_info"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:layout_height="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ongoing construction Info"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/store_item"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:elevation="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="0dp"
+
+            android:background="@drawable/service_card_view_background1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="store item"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/customer_requests"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+
+            android:elevation="4dp"
+            android:layout_height="0dp"
+
+            android:background="@drawable/service_card_view_background1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="customer requests"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    <!--    <androidx.cardview.widget.CardView
+            android:id="@+id/best_construction"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+
+            android:elevation="4dp"
+            android:layout_height="0dp"
+
+            android:background="@drawable/service_card_view_background1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Homepage Constructions"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView> -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/add_interior_design"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+
+            android:elevation="4dp"
+            android:layout_height="0dp"
+
+            android:background="@drawable/service_card_view_background1">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add interior Designs"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

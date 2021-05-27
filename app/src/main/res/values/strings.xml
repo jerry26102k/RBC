@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RB&amp;C</string>
+    <string name="owner">RB&amp;C and co</string>
+    <string name="owner_email">rajeshbuilders@gmail.com</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="desc1">This haunted villa was made in 2018 by team of 70 workers.It was bit scary project.I don\'t know how I made this project possible.</string>
+    <string name="location1">Hogwarts</string>
+    <string name="area1">2 Acres</string>
+    <string name="Rs">\u20B9</string>
+
+</resources>
