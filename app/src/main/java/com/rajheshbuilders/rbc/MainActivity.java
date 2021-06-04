@@ -69,6 +69,9 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+        DatabaseReference scoresRef = FirebaseDatabase.getInstance().getReference();
+        scoresRef.keepSynced(true);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         frameLayout = (FrameLayout)findViewById(R.id.fragment_container);

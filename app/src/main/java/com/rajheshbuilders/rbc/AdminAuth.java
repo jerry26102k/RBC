@@ -65,23 +65,24 @@ public class AdminAuth extends AppCompatActivity {
         reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
-                for(DataSnapshot snap : snapshot.getChildren()) {
-                    String myID = snap.child("Id").getValue().toString().trim();
-                    String myInputId = mId.getText().toString().trim();
-                    String myPassword = snap.child("Password").getValue().toString().trim();
-                    String myInputPassword = mPassword.getText().toString().trim();
+                if(snapshot.exists()) {
+                    for (DataSnapshot snap : snapshot.getChildren()) {
+                        String myID = snap.child("Id").getValue().toString().trim();
+                        String myInputId = mId.getText().toString().trim();
+                        String myPassword = snap.child("Password").getValue().toString().trim();
+                        String myInputPassword = mPassword.getText().toString().trim();
 
 
-                    if (myID.equals(myInputId) && myPassword.equals(myInputPassword)) {
-                        Intent intent = new Intent(AdminAuth.this,AdminDashboard.class);
-                        startActivity(intent);
+                        if (myID.equals(myInputId) && myPassword.equals(myInputPassword)) {
+                            Intent intent = new Intent(AdminAuth.this, AdminDashboard.class);
+                            startActivity(intent);
 
 
+                        } else {
+                            Toast.makeText(AdminAuth.this, "Wrong id or password", Toast.LENGTH_SHORT).show();
 
-                    } else {
-                        Toast.makeText(AdminAuth.this, "Wrong id or password", Toast.LENGTH_SHORT).show();
 
-
+                        }
                     }
                 }
 
